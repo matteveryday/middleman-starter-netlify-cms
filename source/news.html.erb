@@ -1,0 +1,10 @@
+<div class="homepage-news news">
+  <div class="container">
+    <h2>News</h2>
+    <div class="news-items">
+      <% blog.articles.each do |article| %>
+        <%= partial 'partials/news/news_item.slim', :locals => { :article => article } %>
+      <% end %>
+    </div>
+  </div>
+</div>
